@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 7]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en-us"><!--<![endif]-->
+<head>
+  	<meta charset="utf-8" />
+  	<meta name="viewport" content="width=320, minimum-scale=0.5, maximum-scale=0.5, user-scalable=1" />
+  	
+ 	<title>TEST TEMPLATE</title>
+ 	<link rel="stylesheet" href="css/jw_style.css">
+
+ 	<!-- jQuery -->
+ 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+
+	jQuery.browser = {};
+	jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/webkit/.test(navigator.userAgent.toLowerCase());
+	jQuery.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase());
+	jQuery.browser.opera = /opera/.test(navigator.userAgent.toLowerCase());
+	jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());
+
+	$.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+
+	if($.browser.device){
+		window.location.href = 'index_mobile.html';
+	}
+
+	</script>
+ 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+ 	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+ 	<script type="text/javascript" src="js/jquery.vscroll.js"></script>
+ 	<script type="text/javascript" src="js/skinny_mocha.js"></script>
+ 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+		
+		// $('#first').VScroll(0.1);
+
+
+		// var mapOptions = {
+	 //    	zoom: 17,
+	 //    	center: new google.maps.LatLng(40.747034, -73.901959),
+	 //    	draggable: false,
+	 //    	scrollwheel: false
+	 //  	};
+	  	// if( $("html").hasClass("ie7") || $("html").hasClass("ie8") ) {
+	  		
+	  	// }
+	  	// else map = new google.maps.Map(document.getElementById('map'),mapOptions);
+
+
+	});
+	</script>
+
+</head>
+
+<body>
+	<header class="header_white">
+		<div class="header_inner">
+			<div class="header_logo"></div>
+			<div class="header_menu">
+				<div class="menu_div">MENU1</div>
+				<div class="menu_div">MENU2</div>
+				<div class="menu_div">MENU3</div>
+				<div class="menu_div">MENU4</div>
+			</div>
+		</div>
+	</header>
+	<section class="left_white"></section>
+	<section class="right_white"></section>
+	
+	<section class="scene" id="scene01">
+		<div class="scene01_layer">
+			<div id="ani_01">
+				<img src="./images/mocha/scene01_sky.png" class="scene01_sky">
+			</div>
+			<div id="ani_02">
+				<img src="./images/mocha/scene01_mtn.png" class="scene01_mtn">
+			</div>
+			<div id="ani_03">
+				<img src="./images/mocha/scene01_sides.png" class="scene01_sides">
+			</div>
+			<div id="ani_04">
+				<img src="./images/mocha/scene01_road.png" class="scene01_road">
+			</div>
+		</div>
+		
+		<!-- <img src="./images/mocha/scene01_mtn.png" class="scene01_mtn"> -->
+		
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="footer_white">
+		<div class="footer_inner">
+			<p>Copyright © 2014 Jeewhan Kim. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

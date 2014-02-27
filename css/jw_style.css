@@ -1,0 +1,222 @@
+/* ===================================================
+ * jw_style.css v1.0
+ * ===================================================
+ * Copyright 2014 Jeewhan Kim
+ * Feb 27. 2014, Jeewhan Kim
+ * =================================================== */
+
+ /* 
+	Red : #ab5941
+	Green : #1ead7e
+	Blue : #7bdbff - fixed, #33acd9 - bold
+	Yellow : #eab31f
+*/
+
+@font-face {
+	font-family: muli-regular;
+	src: url('muli-regular-webfont.eot');
+	src: url('muli-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-regular-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-regular-webfont.svg#muli-regular') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: muli-light;
+	src: url('muli-light-webfont.eot');
+	src: url('muli-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-light-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-light-webfont.svg#muli-light') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: muli-italic;
+	src: url('muli-italic-webfont.eot');
+	src: url('muli-italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-italic-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-italic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-italic-webfont.svg#muli-italic') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: muli-light-italic;
+	src: url('muli-lightitalic-webfont.eot');
+	src: url('muli-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-lightitalic-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-lightitalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-lightitalic-webfont.svg#muli-light-italic') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: muli-black;
+	src: url('muli-black-webfont.eot');
+	src: url('muli-black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-black-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-black-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-black-webfont.svg#muli-black') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: muli-book;
+	src: url('muli-book-webfont.eot');
+	src: url('muli-book-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-book-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-book-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-book-webfont.svg#muli-book') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: muli-medium;
+	src: url('muli-medium-webfont.eot');
+	src: url('muli-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('muli-medium-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('muli-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('muli-medium-webfont.svg#muli-medium') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'muli-light';
+	
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+header, footer {
+	height: 58px;
+	z-index: 9999;
+}
+
+.header_white {
+	background-color: #FFF;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 58px;
+}
+
+.header_inner {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.header_logo {
+	float: left;
+}
+
+.header_menu {
+	float: right;
+	width: 410px;
+	height: 58px;
+	margin-right: 10px;
+}
+
+.footer_white {
+	background-color: #FFF;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 58px;
+}
+.footer_inner {
+	width: 1024px;
+	margin: 0 auto;
+}
+.left_white {
+	position: absolute;
+	left: 0;
+	z-index: 9999;
+	width: 100px;
+	height: 100%;
+	background-color: white;
+}
+.right_white {
+	right: 0;
+	z-index: 9999;
+	width: 100px;
+	height: 100%;
+	position: absolute;
+	background-color: white;
+}
+
+.menu_div {
+	width: 88px;
+	height: 38px;
+	padding-top: 20px;
+	text-align: center;
+	color: #33acd9;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+	-moz-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+.menu_div:hover {
+	color: #FFF;
+	background-color: #33acd9;
+}
+.scene {
+	width: 100%;
+	height: 100%;
+	
+}
+
+#scene01 {
+	/*background: url(../images/mocha/scene01_full.png) no-repeat fixed;*/
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.scene01_layer {
+	width: 100%;
+	max-width: 100%;
+	min-width: 1024px;
+	height: 100%;
+	overflow-x: hidden;
+}
+.scene01_sky,
+.scene01_mtn,
+.scene01_sides,
+.scene01_road {
+    width: 100%;
+
+    min-width: 1024px;
+	height: 100%;
+	position: absolute;
+/*	-moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;*/
+
+
+}
+.scene01_sky {
+	/*display: none;*/
+	z-index: 10;
+}
+.scene01_mtn {
+	z-index: 9;
+}
+.scene01_sides {
+	z-index: 8;
+}
+.scene01_road {
+	z-index: 7;
+}
+
+#ani_01,
+#ani_02,
+#ani_03,
+#ani_04 {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+
+
